@@ -3,7 +3,6 @@
 
 Testes sobre API da [Marvel](https://developer.marvel.com/docs#!/public/) utilizando Node.js com framework como [Mocha](https://mochajs.org/) e [Chaijs](https://www.chaijs.com/) com suporte para execução dos testes com [Docker](https://docs.docker.com/).
 
----
 
 ## Pré-requisitos
 Ferramentas para uso do projeto conforme a intenção de utilização do mesmo.

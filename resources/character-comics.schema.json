@@ -1,0 +1,526 @@
+{
+  "title": "Character Comics Schema v1",
+  "type": "object",
+  "required": [
+    "code",
+    "status",
+    "copyright",
+    "attributionText",
+    "attributionHTML",
+    "etag",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number"
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string"
+    },
+    "copyright": {
+      "$id": "#/properties/copyright",
+      "type": "string"
+    },
+    "attributionText": {
+      "$id": "#/properties/attributionText",
+      "type": "string"
+    },
+    "attributionHTML": {
+      "$id": "#/properties/attributionHTML",
+      "type": "string"
+    },
+    "etag": {
+      "$id": "#/properties/etag",
+      "type": "string"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "required": [
+        "offset",
+        "limit",
+        "total",
+        "count",
+        "results"
+      ],
+      "properties": {
+        "offset": {
+          "$id": "#/properties/data/properties/offset",
+          "type": "number"
+        },
+        "limit": {
+          "$id": "#/properties/data/properties/limit",
+          "type": "number"
+        },
+        "total": {
+          "$id": "#/properties/data/properties/total",
+          "type": "number"
+        },
+        "count": {
+          "$id": "#/properties/data/properties/count",
+          "type": "number"
+        },
+        "results": {
+          "$id": "#/properties/data/properties/results",
+          "type": "array",
+          "items": {
+            "$id": "#/properties/data/properties/results/items",
+            "type": "object",
+            "required": [
+              "id",
+              "digitalId",
+              "title",
+              "issueNumber",
+              "variantDescription",
+              "description",
+              "modified",
+              "isbn",
+              "upc",
+              "diamondCode",
+              "ean",
+              "issn",
+              "format",
+              "pageCount",
+              "textObjects",
+              "resourceURI",
+              "urls",
+              "series",
+              "variants",
+              "collections",
+              "collectedIssues",
+              "dates",
+              "prices",
+              "thumbnail",
+              "images",
+              "creators",
+              "characters",
+              "stories",
+              "events"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/data/properties/results/items/properties/id",
+                "type": "number"
+              },
+              "digitalId": {
+                "$id": "#/properties/data/properties/results/items/properties/digitalId",
+                "type": "number"
+              },
+              "title": {
+                "$id": "#/properties/data/properties/results/items/properties/title",
+                "type": "string"
+              },
+              "issueNumber": {
+                "$id": "#/properties/data/properties/results/items/properties/issueNumber",
+                "type": "number"
+              },
+              "variantDescription": {
+                "$id": "#/properties/data/properties/results/items/properties/variantDescription",
+                "type": "string"
+              },
+              "description": {
+                "$id": "#/properties/data/properties/results/items/properties/description",
+                "type": "string"
+              },
+              "modified": {
+                "$id": "#/properties/data/properties/results/items/properties/modified",
+                "type": "string"
+              },
+              "isbn": {
+                "$id": "#/properties/data/properties/results/items/properties/isbn",
+                "type": "string"
+              },
+              "upc": {
+                "$id": "#/properties/data/properties/results/items/properties/upc",
+                "type": "string"
+              },
+              "diamondCode": {
+                "$id": "#/properties/data/properties/results/items/properties/diamondCode",
+                "type": "string"
+              },
+              "ean": {
+                "$id": "#/properties/data/properties/results/items/properties/ean",
+                "type": "string"
+              },
+              "issn": {
+                "$id": "#/properties/data/properties/results/items/properties/issn",
+                "type": "string"
+              },
+              "format": {
+                "$id": "#/properties/data/properties/results/items/properties/format",
+                "type": "string"
+              },
+              "pageCount": {
+                "$id": "#/properties/data/properties/results/items/properties/pageCount",
+                "type": "number"
+              },
+              "textObjects": {
+                "$id": "#/properties/data/properties/results/items/properties/textObjects",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/data/properties/results/items/properties/textObjects/items",
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "language",
+                    "text"
+                  ],
+                  "properties": {
+                    "type": {
+                      "$id": "#/properties/data/properties/results/items/properties/textObjects/items/properties/type",
+                      "type": "string"
+                    },
+                    "language": {
+                      "$id": "#/properties/data/properties/results/items/properties/textObjects/items/properties/language",
+                      "type": "string"
+                    },
+                    "text": {
+                      "$id": "#/properties/data/properties/results/items/properties/textObjects/items/properties/text",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "resourceURI": {
+                "$id": "#/properties/data/properties/results/items/properties/resourceURI",
+                "type": "string"
+              },
+              "urls": {
+                "$id": "#/properties/data/properties/results/items/properties/urls",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/data/properties/results/items/properties/urls/items",
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "url"
+                  ],
+                  "properties": {
+                    "type": {
+                      "$id": "#/properties/data/properties/results/items/properties/urls/items/properties/type",
+                      "type": "string"
+                    },
+                    "url": {
+                      "$id": "#/properties/data/properties/results/items/properties/urls/items/properties/url",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "series": {
+                "$id": "#/properties/data/properties/results/items/properties/series",
+                "type": "object",
+                "required": [
+                  "resourceURI",
+                  "name"
+                ],
+                "properties": {
+                  "resourceURI": {
+                    "$id": "#/properties/data/properties/results/items/properties/series/properties/resourceURI",
+                    "type": "string"
+                  },
+                  "name": {
+                    "$id": "#/properties/data/properties/results/items/properties/series/properties/name",
+                    "type": "string"
+                  }
+                }
+              },
+              "variants": {
+                "$id": "#/properties/data/properties/results/items/properties/variants",
+                "type": "array"
+              },
+              "collections": {
+                "$id": "#/properties/data/properties/results/items/properties/collections",
+                "type": "array"
+              },
+              "collectedIssues": {
+                "$id": "#/properties/data/properties/results/items/properties/collectedIssues",
+                "type": "array"
+              },
+              "dates": {
+                "$id": "#/properties/data/properties/results/items/properties/dates",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/data/properties/results/items/properties/dates/items",
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "date"
+                  ],
+                  "properties": {
+                    "type": {
+                      "$id": "#/properties/data/properties/results/items/properties/dates/items/properties/type",
+                      "type": "string"
+                    },
+                    "date": {
+                      "$id": "#/properties/data/properties/results/items/properties/dates/items/properties/date",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "prices": {
+                "$id": "#/properties/data/properties/results/items/properties/prices",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/data/properties/results/items/properties/prices/items",
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "price"
+                  ],
+                  "properties": {
+                    "type": {
+                      "$id": "#/properties/data/properties/results/items/properties/prices/items/properties/type",
+                      "type": "string"
+                    },
+                    "price": {
+                      "$id": "#/properties/data/properties/results/items/properties/prices/items/properties/price",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "thumbnail": {
+                "$id": "#/properties/data/properties/results/items/properties/thumbnail",
+                "type": "object",
+                "required": [
+                  "path",
+                  "extension"
+                ],
+                "properties": {
+                  "path": {
+                    "$id": "#/properties/data/properties/results/items/properties/thumbnail/properties/path",
+                    "type": "string"
+                  },
+                  "extension": {
+                    "$id": "#/properties/data/properties/results/items/properties/thumbnail/properties/extension",
+                    "type": "string"
+                  }
+                }
+              },
+              "images": {
+                "$id": "#/properties/data/properties/results/items/properties/images",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/data/properties/results/items/properties/images/items",
+                  "type": "object",
+                  "required": [
+                    "path",
+                    "extension"
+                  ],
+                  "properties": {
+                    "path": {
+                      "$id": "#/properties/data/properties/results/items/properties/images/items/properties/path",
+                      "type": "string"
+                    },
+                    "extension": {
+                      "$id": "#/properties/data/properties/results/items/properties/images/items/properties/extension",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "creators": {
+                "$id": "#/properties/data/properties/results/items/properties/creators",
+                "type": "object",
+                "required": [
+                  "available",
+                  "collectionURI",
+                  "items",
+                  "returned"
+                ],
+                "properties": {
+                  "available": {
+                    "$id": "#/properties/data/properties/results/items/properties/creators/properties/available",
+                    "type": "number"
+                  },
+                  "collectionURI": {
+                    "$id": "#/properties/data/properties/results/items/properties/creators/properties/collectionURI",
+                    "type": "string"
+                  },
+                  "items": {
+                    "$id": "#/properties/data/properties/results/items/properties/creators/properties/items",
+                    "type": "array",
+                    "items": {
+                      "$id": "#/properties/data/properties/results/items/properties/creators/properties/items/items",
+                      "type": "object",
+                      "required": [
+                        "resourceURI",
+                        "name",
+                        "role"
+                      ],
+                      "properties": {
+                        "resourceURI": {
+                          "$id": "#/properties/data/properties/results/items/properties/creators/properties/items/items/properties/resourceURI",
+                          "type": "string"
+                        },
+                        "name": {
+                          "$id": "#/properties/data/properties/results/items/properties/creators/properties/items/items/properties/name",
+                          "type": "string"
+                        },
+                        "role": {
+                          "$id": "#/properties/data/properties/results/items/properties/creators/properties/items/items/properties/role",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "returned": {
+                    "$id": "#/properties/data/properties/results/items/properties/creators/properties/returned",
+                    "type": "number"
+                  }
+                }
+              },
+              "characters": {
+                "$id": "#/properties/data/properties/results/items/properties/characters",
+                "type": "object",
+                "required": [
+                  "available",
+                  "collectionURI",
+                  "items",
+                  "returned"
+                ],
+                "properties": {
+                  "available": {
+                    "$id": "#/properties/data/properties/results/items/properties/characters/properties/available",
+                    "type": "number"
+                  },
+                  "collectionURI": {
+                    "$id": "#/properties/data/properties/results/items/properties/characters/properties/collectionURI",
+                    "type": "string"
+                  },
+                  "items": {
+                    "$id": "#/properties/data/properties/results/items/properties/characters/properties/items",
+                    "type": "array",
+                    "items": {
+                      "$id": "#/properties/data/properties/results/items/properties/characters/properties/items/items",
+                      "type": "object",
+                      "required": [
+                        "resourceURI",
+                        "name"
+                      ],
+                      "properties": {
+                        "resourceURI": {
+                          "$id": "#/properties/data/properties/results/items/properties/characters/properties/items/items/properties/resourceURI",
+                          "type": "string"
+                        },
+                        "name": {
+                          "$id": "#/properties/data/properties/results/items/properties/characters/properties/items/items/properties/name",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "returned": {
+                    "$id": "#/properties/data/properties/results/items/properties/characters/properties/returned",
+                    "type": "number"
+                  }
+                }
+              },
+              "stories": {
+                "$id": "#/properties/data/properties/results/items/properties/stories",
+                "type": "object",
+                "required": [
+                  "available",
+                  "collectionURI",
+                  "items",
+                  "returned"
+                ],
+                "properties": {
+                  "available": {
+                    "$id": "#/properties/data/properties/results/items/properties/stories/properties/available",
+                    "type": "number"
+                  },
+                  "collectionURI": {
+                    "$id": "#/properties/data/properties/results/items/properties/stories/properties/collectionURI",
+                    "type": "string"
+                  },
+                  "items": {
+                    "$id": "#/properties/data/properties/results/items/properties/stories/properties/items",
+                    "type": "array",
+                    "items": {
+                      "$id": "#/properties/data/properties/results/items/properties/stories/properties/items/items",
+                      "type": "object",
+                      "required": [
+                        "resourceURI",
+                        "name",
+                        "type"
+                      ],
+                      "properties": {
+                        "resourceURI": {
+                          "$id": "#/properties/data/properties/results/items/properties/stories/properties/items/items/properties/resourceURI",
+                          "type": "string"
+                        },
+                        "name": {
+                          "$id": "#/properties/data/properties/results/items/properties/stories/properties/items/items/properties/name",
+                          "type": "string"
+                        },
+                        "type": {
+                          "$id": "#/properties/data/properties/results/items/properties/stories/properties/items/items/properties/type",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "returned": {
+                    "$id": "#/properties/data/properties/results/items/properties/stories/properties/returned",
+                    "type": "number"
+                  }
+                }
+              },
+              "events": {
+                "$id": "#/properties/data/properties/results/items/properties/events",
+                "type": "object",
+                "required": [
+                  "available",
+                  "collectionURI",
+                  "items",
+                  "returned"
+                ],
+                "properties": {
+                  "available": {
+                    "$id": "#/properties/data/properties/results/items/properties/events/properties/available",
+                    "type": "number"
+                  },
+                  "collectionURI": {
+                    "$id": "#/properties/data/properties/results/items/properties/events/properties/collectionURI",
+                    "type": "string"
+                  },
+                  "items": {
+                    "$id": "#/properties/data/properties/results/items/properties/events/properties/items",
+                    "type": "array",
+                    "items": {
+                      "$id": "#/properties/data/properties/results/items/properties/events/properties/items/items",
+                      "type": "object",
+                      "required": [
+                        "resourceURI",
+                        "name"
+                      ],
+                      "properties": {
+                        "resourceURI": {
+                          "$id": "#/properties/data/properties/results/items/properties/events/properties/items/items/properties/resourceURI",
+                          "type": "string"
+                        },
+                        "name": {
+                          "$id": "#/properties/data/properties/results/items/properties/events/properties/items/items/properties/name",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "returned": {
+                    "$id": "#/properties/data/properties/results/items/properties/events/properties/returned",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
