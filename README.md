@@ -1,4 +1,4 @@
-# Teste de API
+# api-test
 > Projeto com testes de API utilizando Node.js
 
 Testes sobre API da [Marvel](https://developer.marvel.com/docs#!/public/) utilizando Node.js com framework como [Mocha](https://mochajs.org/) e [Chaijs](https://www.chaijs.com/) com suporte para execução dos testes com [Docker](https://docs.docker.com/).
