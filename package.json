@@ -2,6 +2,10 @@
   "name": "api-test",
   "version": "1.0.0",
   "description": "api test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jc85lima/api-test.git"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha ./tests/**/*.js",
     "lint": "./node_modules/.bin/eslint ./tests ./support"
